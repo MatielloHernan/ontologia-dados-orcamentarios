@@ -1,2 +1,2 @@
 # ontologia-dados-orcamentarios
-Ontologia sobre dados orçamentos brasileiros/Ontology about brazilian budgetary data
+Ontologia sobre dados orçamentários brasileiros/Ontology about brazilian budgetary data
