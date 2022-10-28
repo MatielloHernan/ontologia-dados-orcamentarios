@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#"
+     xml:base="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>Dados do portal tem origem em outro portal</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#Esferas[F,E,M] -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#Esferas[F,E,M]">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#BrasilPontoIo"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#DadosGov"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#MinisteriodaEducacao"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#PortaldaTransparencia"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#RadarBrasil"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#TesouroTransparente"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#Poderes[E,L,J] -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#Poderes[E,L,J]">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#BrasilPontoIo"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#DadosGov"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#MinisteriodaEducacao"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#PortaldaTransparencia"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#RadarBrasil"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#TesouroTransparente"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#Tipo[Despesa/Receita] -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#Tipo[Despesa/Receita]">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#BrasilPontoIo"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#DadosGov"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#MinisteriodaEducacao"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#PortaldaTransparencia"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#RadarBrasil"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#TesouroTransparente"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#Tipo_de_Dado(Portal_c/_consulta,_Arquivo) -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#Tipo_de_Dado(Portal_c/_consulta,_Arquivo)">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#BrasilPontoIo"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#DadosGov"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#MinisteriodaEducacao"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#PortaldaTransparencia"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#RadarBrasil"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#TesouroTransparente"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#BrasilPontoIo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#BrasilPontoIo">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#DadosAbertosCamara"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#DadosGov"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#SIOP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#CâmaraDadosAbertos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#CâmaraDadosAbertos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#DadosAbertosCamara -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#DadosAbertosCamara"/>
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#DadosGov -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#DadosGov"/>
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#MinisteriodaEducacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#MinisteriodaEducacao">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#PortaldaTransparencia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#SIOP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#PortaldaTransparencia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#PortaldaTransparencia">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#DadosGov"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#PortaldaTransparencia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#SIOP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#RadarBrasil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#RadarBrasil">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#DadosGov"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#SIOP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#SIGA_Brasil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#SIGA_Brasil"/>
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#SIOP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#SIOP">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#SIOP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#TesouroTransparente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#TesouroTransparente">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#SIOP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#temOrigem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/note01/ontologies/2022/7/dados-orcamentarios-ld#TesouroTransparente"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
